@@ -1,16 +1,29 @@
 .navbar {
-    padding: $unit-8 $unit-6;
+    padding: $unit-6;
 
     .navbar__logo {
-        padding: $unit-2;
-        padding-left: 0;
+        img {
+            height: 2rem;
+        }
+
+        @media (max-width: $size-sm) {
+            text-align: center;
+            display: block;
+            margin-bottom: $unit-5;
+        }
     }
 
     .navbar__links {
         list-style: none;
         float: right;
         margin: 0;
-        line-height: .5;
+
+        @media (max-width: $size-sm) {
+            display: block;
+            margin: 0 auto;
+            float: none;
+            text-align: center;
+        }
 
         li {
             display: inline-block;
@@ -24,6 +37,10 @@
             a {
                 text-decoration: none;
                 color: $black;
+            }
+
+            @media (max-width: $size-sm) {
+                padding: $unit-2;
             }
         }
     }
