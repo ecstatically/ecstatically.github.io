@@ -35,3 +35,26 @@
     display: flex;
     justify-content: center;
 }
+
+// padding helpers
+.u-pad-sm {
+    padding: $unit-4;
+}
+.u-pad-md {
+    padding: $unit-6;
+}
+.u-pad-lg {
+    padding: $unit-8;
+}
+.u-pad-sm-vertical {
+    padding-top: $unit-4;
+    padding-bottom: $unit-4;
+}
+.u-pad-md-vertical {
+    padding-top: $unit-6;
+    padding-bottom: $unit-6;
+}
+.u-pad-lg-vertical {
+    padding-top: $unit-8;
+    padding-bottom: $unit-8;
+}

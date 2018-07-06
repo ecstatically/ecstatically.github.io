@@ -17,3 +17,24 @@
 .section-title {
     font-size: $unit-5;
 }
+
+.left-border {
+    border-left: 6px solid #F3D166;
+    padding-left: 10px;
+}
+
+.feature {
+    padding-top: $unit-4;
+    padding-bottom: $unit-4;
+
+    img {
+        max-width: 80px;
+        max-height: 30px;
+        margin-bottom: $unit-6;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: $unit-5;
+    }
+}

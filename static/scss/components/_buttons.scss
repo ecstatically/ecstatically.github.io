@@ -27,4 +27,8 @@
             background: darken($secondary-color, 2%);
         }
     }
+
+    &.btn--md {
+        padding: 16px 24px;
+    }
 }
