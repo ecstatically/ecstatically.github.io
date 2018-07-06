@@ -13,7 +13,7 @@
         <a href="index.html" class="navbar__logo"><img src="./static/img/logo.png" alt="Ecstatically"></a>
         <ul class="navbar__links">
             <li><a href="#features">Features</a></li>
-            <li><a href="#" class="btn btn--secondary">Request A Demo</a></li>
+            <li><a href="#" data-src="#demo_modal" class="open-modal btn btn--secondary">Request A Demo</a></li>
         </ul>
     </nav>
     <header class="gray-bg">
@@ -128,12 +128,30 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#" class="btn btn--secondary btn--md">Request A Demo</a>
+                <a href="#" data-src="#demo_modal" class="open-modal btn btn--secondary btn--md">Request A Demo</a>
             </div>
         </div>
     </section>
     <footer>
         <p class="text-center">Footer</p>
     </footer>
+
+    <div class="modal" id="demo_modal">
+        <div class="modal__inner">
+            <div class="modal__close">&times;</div>
+            <p class="modal__title">
+                Help us care for every student’s emotional health and build more ecstatic classrooms and schools. 
+            </p>
+            <div class="modal__form text-center">
+                <form action="" method="POST">
+                    <input class="input input--underline" type="text" name="name" placeholder="Full name *">
+                    <input class="input input--underline" type="email" name="email" placeholder="Email *">
+                    <input class="input input--underline" type="text" name="role" placeholder="Role in school/district *">
+                    <input type="submit" class="btn btn--secondary" value="Request A Demo">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./static/js/main.js"></script>
 </body>
 </html>

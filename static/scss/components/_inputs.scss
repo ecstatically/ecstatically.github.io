@@ -1,0 +1,16 @@
+.input {
+    display: block;
+    margin-bottom: $unit-6;
+    width: 100%;
+    outline: none;
+
+    &.input--underline {
+        border: none;
+        border-bottom: 1px solid $dark-gray;
+        color: $dark-gray;
+    }
+
+    &:active, &:hover, &:focus {
+        border-color: $primary-color-light !important;
+    }
+}

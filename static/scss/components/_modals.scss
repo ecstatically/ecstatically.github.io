@@ -1,0 +1,49 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+
+    .modal__inner {
+        background: $white;
+        padding: $unit-10;
+        width: 90%;
+        max-width: 500px;
+        border-radius: $border-radius;
+        margin: 0 auto;
+        top: 30%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal__title {
+        font-weight: 500;
+    }
+
+    .modal__form {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .modal__close {
+        position: absolute;
+        right: 16px;
+        top: 24px;
+        font-size: 1.6rem;
+        margin: 0;
+        line-height: 0;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+.modal-open {
+    overflow: hidden;
+}
