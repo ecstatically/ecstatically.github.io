@@ -38,3 +38,31 @@
         font-size: $unit-5;
     }
 }
+
+.image-arrow {
+    position: relative;
+
+    .arrow {
+        position: absolute;
+        bottom: 15px;
+        right: -120px;
+
+        img {
+            height: 150px;
+        }
+
+        @media (max-width: 1200px) {
+            right: -80px;
+            
+            img {
+                height: 110px;
+            }
+        }
+
+        @media (max-width: $size-lg) {
+            img {
+                display: none;
+            }
+        }
+    }
+}
