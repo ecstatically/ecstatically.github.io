@@ -1,0 +1,30 @@
+.navbar {
+    padding: $unit-8 $unit-6;
+
+    .navbar__logo {
+        padding: $unit-2;
+        padding-left: 0;
+    }
+
+    .navbar__links {
+        list-style: none;
+        float: right;
+        margin: 0;
+        line-height: .5;
+
+        li {
+            display: inline-block;
+            padding: $unit-2 $unit-6;
+            margin: 0;
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+            
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}

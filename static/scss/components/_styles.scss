@@ -1,0 +1,19 @@
+.header-title {
+    display: inline-block;
+    padding-right: 48px;
+    padding-bottom: 8px;
+}
+
+.header-subtitle {
+    margin-bottom: 0;
+    max-width: 650px;
+    color: $dark-gray;
+}
+
+.header-emphasis {
+    color: $primary-color;
+}
+
+.section-title {
+    font-size: $unit-5;
+}

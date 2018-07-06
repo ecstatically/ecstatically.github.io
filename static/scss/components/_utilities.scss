@@ -1,0 +1,28 @@
+// Utilities
+
+// Clearfix mixin
+@mixin clearfix() {
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+}
+
+// Component focus shadow
+@mixin control-shadow($color: $primary-color) {
+  box-shadow: 0 0 0 .1rem rgba($color, .2);
+}
+
+
+// Label base style
+@mixin label-base() {
+  border-radius: $border-radius;
+  line-height: 1.2;
+  padding: .1rem .2rem;
+}
+
+@mixin label-variant($color: $light-color, $bg-color: $primary-color) {
+  background: $bg-color;
+  color: $color;
+}
