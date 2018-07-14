@@ -1,5 +1,5 @@
 .navbar {
-    padding: $unit-6;
+    padding: $unit-4;
 
     .navbar__logo {
         img {
@@ -36,8 +36,14 @@
             
             a {
                 text-decoration: none;
-                color: $black;
+                color: $gray;
+                transition: $base-transition;
+
+                &:hover {
+                    color: $black;
+                }
             }
+            
 
             @media (max-width: $size-sm) {
                 padding: $unit-2;

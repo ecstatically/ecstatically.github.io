@@ -6,12 +6,13 @@
 
 .header-subtitle {
     margin-bottom: 0;
-    max-width: 650px;
     color: $dark-gray;
+    font-weight: 500;
 }
 
 .header-emphasis {
     color: $primary-color;
+    font-weight: 500;
 }
 
 .section-title {
@@ -28,14 +29,17 @@
     padding-bottom: $unit-4;
 
     img {
-        max-width: 80px;
-        max-height: 30px;
-        margin-bottom: $unit-6;
+        max-width: 60px;
+        margin-bottom: $unit-4;
     }
 
-    h3 {
+    .feature__title {
         font-weight: 500;
         font-size: $unit-5;
+    }
+
+    .feature__body {
+        color: $gray;
     }
 }
 
