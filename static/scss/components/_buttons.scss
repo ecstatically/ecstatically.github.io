@@ -4,6 +4,8 @@
     color: $white !important;
     border-radius: $border-radius;
     transition: $base-transition;
+    border: none;
+    cursor: pointer;
 
     &:hover {
         background: darken($gray, 2%);

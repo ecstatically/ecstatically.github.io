@@ -6,8 +6,13 @@
 
     &.input--underline {
         border: none;
-        border-bottom: 1px solid $dark-gray;
+        border-bottom: 1px solid $light-gray;
         color: $dark-gray;
+        background: transparent;
+
+        &::placeholder {
+            color: $light-gray;
+        }
     }
 
     &:active, &:hover, &:focus {

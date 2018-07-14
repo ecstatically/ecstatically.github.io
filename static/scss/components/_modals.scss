@@ -5,10 +5,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, 0.8);
 
     .modal__inner {
-        background: $white;
+        background: #F3FFFC;
         padding: $unit-10;
         width: 90%;
         max-width: 500px;
@@ -18,9 +18,9 @@
         position: absolute;
         right: 0;
         left: 0;
-        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
     }
 
     .modal__title {

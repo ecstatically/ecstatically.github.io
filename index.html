@@ -145,10 +145,12 @@
                 Help us care for every student’s emotional health and build more ecstatic classrooms and schools. 
             </p>
             <div class="modal__form text-center">
-                <form action="" method="POST">
-                    <input class="input input--underline" type="text" name="name" placeholder="Full name *">
-                    <input class="input input--underline" type="email" name="email" placeholder="Email *">
-                    <input class="input input--underline" type="text" name="role" placeholder="Role in school/district *">
+                <form action="https://formspree.io/nilay.modi96@gmail.com" method="POST">
+                    <input class="input input--underline" type="text" name="name" placeholder="Full name *" required>
+                    <input class="input input--underline" type="email" name="email" placeholder="Email *" required>
+                    <input class="input input--underline" type="text" name="role" placeholder="Role in school/district *" required>
+                    <input type="hidden" name="_next" value="http://www.ecstatically.io" />
+                    <input type="hidden" name="_subject" value="New Ecstatically Contact Submission!" />
                     <input type="submit" class="btn btn--secondary" value="Request A Demo">
                 </form>
             </div>
