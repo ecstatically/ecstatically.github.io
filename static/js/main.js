@@ -17,6 +17,16 @@ window.onload = function(){
     });
 
     // hide on click outside
+    document.addEventListener('click', function(e) {
+        // console.log(e.target);
+
+        if (e.target.classList.contains('modal')) {
+            // console.log('modal!');
+            // close it cause modal is open but we're not clicking the inner
+            toggleDisplayElement(e.target);
+            document.body.classList.remove("modal-open");
+        }
+    });
     
     // $(document).click(function(event) {
     //     //if you click on anything except the modal itself or the "open modal" link, close the modal

@@ -26,3 +26,11 @@
   background: $bg-color;
   color: $color;
 }
+
+.line-break {
+  display: block;
+
+  @media (max-width: $size-sm) {
+    display: none;
+  }
+}
