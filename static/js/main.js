@@ -28,12 +28,13 @@ window.onload = function(){
         }
     });
     
-    // $(document).click(function(event) {
-    //     //if you click on anything except the modal itself or the "open modal" link, close the modal
-    //     if (!$(event.target).closest(".modal,.js-open-modal").length) {
-    //       $("body").find(".modal").removeClass("visible");
-    //     }
-    //   });
+    // hamburger menu
+    document.querySelector('.navbar__mobile').addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('opened');
+        var links = document.querySelector('.navbar__links');
+        links.classList.toggle('opened');
+    });
       
 };
 

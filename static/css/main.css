@@ -554,6 +554,9 @@ dl dd {
   .container.container--spaceless {
     padding-top: 0;
     padding-bottom: 0; }
+  @media (max-width: 600px) {
+    .container {
+      padding: 3.2rem 1rem; } }
 
 .show-xs,
 .show-sm,
@@ -946,21 +949,39 @@ dl dd {
   padding: 0.8rem; }
   .navbar .navbar__logo img {
     height: 2rem; }
-  @media (max-width: 600px) {
-    .navbar .navbar__logo {
-      text-align: center;
-      display: block;
-      margin-bottom: 1rem; } }
+  .navbar .navbar__mobile {
+    display: none; }
+    .navbar .navbar__mobile .bar1, .navbar .navbar__mobile .bar2, .navbar .navbar__mobile .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+      cursor: pointer; }
+    .navbar .navbar__mobile.opened .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px); }
+    .navbar .navbar__mobile.opened .bar2 {
+      opacity: 0; }
+    .navbar .navbar__mobile.opened .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px); }
+    @media (max-width: 600px) {
+      .navbar .navbar__mobile {
+        display: block;
+        float: right; } }
   .navbar .navbar__links {
     list-style: none;
     float: right;
     margin: 0; }
     @media (max-width: 600px) {
       .navbar .navbar__links {
-        display: block;
+        display: none;
         margin: 0 auto;
         float: none;
-        text-align: center; } }
+        text-align: center; }
+        .navbar .navbar__links.opened {
+          display: block; } }
     .navbar .navbar__links li {
       display: inline-block;
       padding: 0.4rem 0.8rem;
@@ -975,7 +996,8 @@ dl dd {
           color: #282828; }
       @media (max-width: 600px) {
         .navbar .navbar__links li {
-          padding: 0.4rem; } }
+          padding: 0.8rem;
+          display: block; } }
 
 .img-responsive {
   display: block;
@@ -1060,6 +1082,9 @@ footer {
   display: inline-block;
   padding-right: 48px;
   padding-bottom: 8px; }
+  @media (max-width: 600px) {
+    .header-title {
+      font-size: 1.5rem; } }
 
 .header-subtitle {
   margin-bottom: 0;

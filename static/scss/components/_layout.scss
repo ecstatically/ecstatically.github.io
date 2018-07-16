@@ -32,6 +32,10 @@
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    @media (max-width: $size-sm) {
+    padding: 3.2rem 1rem;
+    }
   }
   
   // Responsive breakpoint system
