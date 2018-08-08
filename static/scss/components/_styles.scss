@@ -26,6 +26,10 @@
 .left-border {
     border-left: 6px solid #F3D166;
     padding-left: 10px;
+
+    &.left-border--blue {
+        border-color: $primary-color-light;
+    }
 }
 
 .feature {
@@ -72,5 +76,13 @@
                 display: none;
             }
         }
+    }
+}
+.quote {
+    font-size: 1.2em;
+
+    .author {
+        color: $gray;
+        font-size: 80%;
     }
 }

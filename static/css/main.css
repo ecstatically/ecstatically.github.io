@@ -459,6 +459,15 @@ dl dd {
     background-size: contain;
     left: 5px;
     top: 1px; }
+  .icon.icon--earth:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon-earth.png);
+    background-size: contain;
+    left: 5px;
+    top: 1px; }
   .icon.icon--md {
     padding: 6px 0 6px 36px; }
     .icon.icon--md:before {
@@ -483,6 +492,17 @@ dl dd {
       position: absolute;
       top: 0;
       left: 0; }
+
+.font-primarylight {
+  color: #3D94F1; }
+
+.font-primary {
+  color: #575BD8; }
+
+.superscript {
+  position: relative;
+  top: -0.5em;
+  font-size: 70%; }
 
 .clearfix::after, .container::after {
   clear: both;
@@ -535,6 +555,21 @@ dl dd {
 .u-pad-lg-vertical {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem; }
+
+.u-mar-sm {
+  margin: 0.8rem; }
+
+.u-mar-sm-vertical {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem; }
+
+.u-mar-md-vertical {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+.u-mar-lg-vertical {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem; }
 
 .container {
   margin-left: auto;
@@ -1102,6 +1137,8 @@ footer {
 .left-border {
   border-left: 6px solid #F3D166;
   padding-left: 10px; }
+  .left-border.left-border--blue {
+    border-color: #3D94F1; }
 
 .feature {
   padding-top: 0.8rem;
@@ -1131,5 +1168,11 @@ footer {
     @media (max-width: 960px) {
       .image-arrow .arrow img {
         display: none; } }
+
+.quote {
+  font-size: 1.2em; }
+  .quote .author {
+    color: #9B9B9B;
+    font-size: 80%; }
 
 /*# sourceMappingURL=main.css.map */

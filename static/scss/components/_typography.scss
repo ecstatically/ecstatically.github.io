@@ -146,6 +146,19 @@ dl {
       }
   }
 
+  &.icon--earth {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url(../img/icon-earth.png);
+        background-size: contain;
+        left: 5px;
+        top: 1px;
+    }
+}
+
   &.icon--md {
       padding: 6px 0 6px 36px;
 
@@ -177,4 +190,15 @@ dl {
           left: 0;
       }
   }
+}
+.font-primarylight {
+  color: $primary-color-light;
+}
+.font-primary {
+  color: $primary-color;
+}
+.superscript {
+  position: relative;
+  top: -0.5em;
+  font-size: 70%;
 }
