@@ -1047,7 +1047,8 @@ dl dd {
 
 footer {
   padding-top: 1.6rem;
-  padding-bottom: 1.6rem; }
+  padding-bottom: 1.6rem;
+  background: #F7F9FA; }
   footer .footer-copyright {
     margin-bottom: 0.4rem;
     text-align: center; }
@@ -1155,19 +1156,64 @@ footer {
 .image-arrow {
   position: relative; }
   .image-arrow .arrow {
-    position: absolute;
-    bottom: 15px;
-    right: -120px; }
-    .image-arrow .arrow img {
-      height: 150px; }
-    @media (max-width: 1200px) {
-      .image-arrow .arrow {
-        right: -80px; }
-        .image-arrow .arrow img {
-          height: 110px; } }
+    position: absolute; }
+    .image-arrow .arrow.arrow-1 {
+      bottom: 15px;
+      right: -120px; }
+      .image-arrow .arrow.arrow-1 img {
+        height: 150px; }
+      @media (max-width: 1200px) {
+        .image-arrow .arrow.arrow-1 {
+          right: -80px; }
+          .image-arrow .arrow.arrow-1 img {
+            height: 110px; } }
+      @media (max-width: 960px) {
+        .image-arrow .arrow.arrow-1 img {
+          display: none; } }
+    .image-arrow .arrow.arrow-2 {
+      -moz-transform: scale(-1, -1);
+      -o-transform: scale(-1, -1);
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+      top: 70%;
+      right: 95%; }
+      .image-arrow .arrow.arrow-2 img {
+        height: 120px; }
+      @media (max-width: 1200px) {
+        .image-arrow .arrow.arrow-2 img {
+          height: 100px; } }
+      @media (max-width: 960px) {
+        .image-arrow .arrow.arrow-2 img {
+          display: none; } }
+    .image-arrow .arrow.arrow-3 {
+      top: 10px;
+      right: 20px;
+      transform: rotate(-60deg); }
+      .image-arrow .arrow.arrow-3 img {
+        height: 120px; }
+      @media (max-width: 960px) {
+        .image-arrow .arrow.arrow-3 img {
+          display: none; } }
+  .image-arrow .arrow-text {
+    font-size: 85%;
+    color: #9B9B9B;
+    position: absolute; }
     @media (max-width: 960px) {
-      .image-arrow .arrow img {
+      .image-arrow .arrow-text {
         display: none; } }
+    .image-arrow .arrow-text.arrow-text-2 {
+      top: 115%;
+      right: 85%;
+      width: 300px;
+      transform: rotate(5deg); }
+      @media (max-width: 1200px) {
+        .image-arrow .arrow-text.arrow-text-2 {
+          right: 80%;
+          top: 120%; } }
+    .image-arrow .arrow-text.arrow-text-3 {
+      top: -10px;
+      right: 100px;
+      transform: rotate(20deg); }
 
 .quote {
   font-size: 1.2em; }
