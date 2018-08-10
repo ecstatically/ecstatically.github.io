@@ -430,8 +430,7 @@ dl dd {
   border-bottom: 10px solid #3D94F1;
   display: inline-block; }
   .title-underline.title-underline--sm {
-    border-bottom-width: 6px;
-    padding-bottom: 4px; }
+    border-bottom-width: 6px; }
   .title-underline.title-underline--secondary {
     border-bottom-color: #50E3C2; }
 
@@ -554,6 +553,9 @@ dl dd {
 
 .u-pad-lg-vertical {
   padding-top: 1.6rem;
+  padding-bottom: 1.6rem; }
+
+.u-pad-lg-bottom {
   padding-bottom: 1.6rem; }
 
 .u-mar-sm {
@@ -957,6 +959,10 @@ dl dd {
 .gray-bg {
   background: #F7F9FA; }
 
+.grid-bg {
+  background: url(../img/bg-grid.jpg);
+  background-repeat: repeat; }
+
 .btn {
   padding: 12px 16px;
   background: #9B9B9B;
@@ -1062,7 +1068,7 @@ footer {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease; }
   .modal .modal__inner {
     background: #F3FFFC;
@@ -1081,8 +1087,6 @@ footer {
     @media (max-width: 600px) {
       .modal .modal__inner {
         top: 20%; } }
-  .modal .modal__title {
-    font-weight: 500; }
   .modal .modal__form {
     width: 75%;
     margin: 0 auto; }
@@ -1117,20 +1121,17 @@ footer {
 
 .header-title {
   display: inline-block;
-  padding-right: 48px;
-  padding-bottom: 8px; }
+  padding-right: 48px; }
   @media (max-width: 600px) {
     .header-title {
       font-size: 1.5rem; } }
 
 .header-subtitle {
-  margin-bottom: .5em;
-  color: #4A4A4A;
-  font-weight: 500; }
+  margin-bottom: 1em;
+  color: #4A4A4A; }
 
 .header-emphasis {
-  color: #575BD8;
-  font-weight: 500; }
+  color: #575BD8; }
 
 .section-title {
   font-size: 1rem; }
@@ -1158,13 +1159,14 @@ footer {
   .image-arrow .arrow {
     position: absolute; }
     .image-arrow .arrow.arrow-1 {
-      bottom: 15px;
-      right: -120px; }
+      bottom: 12px;
+      right: -150px; }
       .image-arrow .arrow.arrow-1 img {
         height: 150px; }
       @media (max-width: 1200px) {
         .image-arrow .arrow.arrow-1 {
-          right: -80px; }
+          right: -105px;
+          bottom: 10px; }
           .image-arrow .arrow.arrow-1 img {
             height: 110px; } }
       @media (max-width: 960px) {

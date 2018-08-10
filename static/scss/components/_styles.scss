@@ -1,7 +1,6 @@
 .header-title {
     display: inline-block;
     padding-right: 48px;
-    padding-bottom: 8px;
 
     @media (max-width: $size-sm) {
         font-size: 1.5rem;
@@ -9,14 +8,12 @@
 }
 
 .header-subtitle {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     color: $dark-gray;
-    font-weight: 500;
 }
 
 .header-emphasis {
     color: $primary-color;
-    font-weight: 500;
 }
 
 .section-title {
@@ -58,15 +55,16 @@
         position: absolute;
 
         &.arrow-1 {
-            bottom: 15px;
-            right: -120px;
+            bottom: 12px;
+            right: -150px;
     
             img {
                 height: 150px;
             }
     
             @media (max-width: 1200px) {
-                right: -80px;
+                right: -105px;
+                bottom: 10px;
                 
                 img {
                     height: 110px;
